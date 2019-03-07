@@ -1,0 +1,61 @@
+html, body {
+	height: 100vh;
+}
+
+div{
+	box-sizing: border-box;
+}
+
+#calc {
+	width: 300px;
+	height: 450px;
+	margin: 50px auto;
+	background-color: BurlyWood;
+}
+
+.screen {
+	height: 75px;
+	background-color: white;
+	border: 10px solid BurlyWood;
+	text-align: right;
+	font-size: 60px;
+}
+
+.row {
+	height: 75px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.number {
+	border: 4px solid BurlyWood;
+	width: 33.333%;
+	height: 100%;
+	margin: 0;
+	float: left;
+}
+
+.operator {
+	width: 25%;
+	height: 100%;
+	margin: 0;
+	float: left;
+	border: 4px solid BurlyWood;
+}
+
+.action {
+	width: 50%;
+	height: 100%;
+	margin-bottom: 2px;
+	margin: 0;
+	float: left;
+	border: 4px solid BurlyWood;
+}
+
+.number:focus, .operator:focus, #enter:focus {
+	outline: none;
+}
+.number:hover, .operator:hover, #enter:focus {
+	cursor: pointer;
+	background-color: #f1dcc0;
+}
