@@ -7,16 +7,13 @@ let value = "";
 let result = 0;
 //enter button function
 const confirm = () => {
-	console.log(value);
 	result = eval(value);
-	console.log("result: "+ result);
 	screen.text(result);
 	curr = '';
 }
 //clear button function
 const clear = () => {
 	result = 0;
-	console.log("clear result: "+ result);
 	value = "";
 	screen.text("");
 }
@@ -26,7 +23,6 @@ function numPress(){
 	curr+=currNumber;
 	value += currNumber;
 	screen.text(curr);
-	console.log(value);
 }
 //number key function
 function keyPress(key){
@@ -34,7 +30,6 @@ function keyPress(key){
 	curr+=currNumber;
 	value += currNumber;
 	screen.text(curr);
-	console.log(value);
 }
 //operator button function
 //this checks the current value not the operator
@@ -47,7 +42,6 @@ function operatorClick(){
 //operator key press function
 //Checks num not operator
 const operatorKeyPress = (key) => {
-		console.log('Key: ' + key);
 		let currOperator = key;
 		value+=currOperator;
 		screen.text(currOperator);
@@ -69,7 +63,6 @@ $(document).keypress(e => {
 	const enterKey = 'Enter';
 	const deleteKey = 'Backspace';
 	let keyVal = e.key;
-	console.log(keyVal);
 	e.preventDefault();
 	if(validKeys.includes(keyVal)){
 		keyPress(keyVal);

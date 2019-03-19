@@ -82,7 +82,7 @@ button{
 	border-radius: 15px;
 }
 
-.number:focus, .operator:focus, #enter:focus {
+.number:focus, .operator:focus, #enter:focus, #clear:focus {
 	outline: none;
 }
 .number:hover, .operator:hover, #enter:hover, #clear:hover {
